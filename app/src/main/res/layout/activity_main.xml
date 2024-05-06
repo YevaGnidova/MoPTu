@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@drawable/forest">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <!-- MaterialToolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationContentDescription="moptu"
+            app:subtitle="MoPTu"
+            app:subtitleTextColor="#6E976D"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+        <!-- Кнопка для начала путешествия -->
+
+        <ImageView
+            android:contentDescription="logo"
+            android:layout_width="254dp"
+            android:layout_height="235dp"
+            android:background="@drawable/logo"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="79dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start"
+            android:layout_width="257dp"
+            android:layout_height="67dp"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="385dp"
+            android:text="Start trip"
+            app:cornerRadius="15dp"
+            style=""
+
+            tools:ignore="MissingConstraints" />
+
+
+
+
+
+        <!--        <Button-->
+<!--            android:id="@+id/btn_start_trip"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="324dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:text="Start Your Trip"-->
+<!--            android:textColor="@color/white"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/toolbar"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
